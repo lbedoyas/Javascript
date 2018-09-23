@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Try Catch</title>
+</head>
+<body>
+    <h3>Que es el try Catch</h3>
+        <p>La sentencia try consiste en un bloque try que contiene una o más instrucciones 
+            (se debe usar siempre {},  también para instrucciones de una línea), y al menos 
+            una cláusula catch o una finally </p>
+            <br>
+            <br>
+        <p>Por favor ingresa un numero entre 5 y el 10</p>
+
+        <input id="demo" type="text">
+        <button type="button" onclick="myFunction()">Validar</button>
+        <p id="p01"></p>
+        
+        <script>
+        function myFunction() {
+            var message, x;
+            message = document.getElementById("p01");
+            message.innerHTML = "";
+            x = document.getElementById("demo").value;
+            try { 
+                if(x == "")  throw "Vacio";
+                if(isNaN(x)) throw "No es un numero";
+                x = Number(x);
+                if(x < 5)    throw "muy corto";
+                if(x > 10)   throw "muy alto";
+            }
+            catch(err) {
+                message.innerHTML = "Input dice " + err;
+            }
+        }
+        </script>
+    
+</body>
+</html>

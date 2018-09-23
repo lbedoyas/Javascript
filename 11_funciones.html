@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Funciones</title>
+</head>
+<body>
+    <h1>Ejemplo de Funciones e Javascript</h1>
+    <br>
+    <script>
+        function miFuncion()
+        {
+            document.write("Esta es una funcion");
+        }
+
+        miFuncion();
+
+    </script>
+
+    <br>
+    <h3>Segundo Ejemplo de funciones en Javascript</h3>
+    <br>
+    <p id="ejem1"></p>
+
+<script>
+function miFuncion2(p1, p2) {
+    return p1 * p2;
+}
+document.getElementById("ejem1").innerHTML = miFuncion2(2, 2);
+</script>
+<br>
+<h3>Tercer Ejemplo</h3>
+<br>
+<script>
+    var superSayayin = {
+    grito: "Kamehamehaaaa!!!!",
+    grita: function () {
+        console.log(this.grito);
+    }
+}
+ 
+superSayayin.grita();
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo de estructuras Switch</title>
+</head>
+<body>
+    <h1>Ejemplo de estructuras Switch</h1>
+    <br>
+    <h3>Primer Ejemplo de switch en Javascript</h3>
+    <script>
+        var letra = "a";
+            switch(letra)
+            {
+                case 'a': document.writeln("Es la letra A"); break;
+                case 'e': document.writeln("Es la letra E"); break;
+                case 'i': document.writeln("Es la letra I"); break;
+                case 'o': document.writeln("Es la letra O"); break;
+                case 'u': document.writeln("Es la letra U"); break;
+                default: document.writeln("No es ninguna de la opciones"); break; 
+            }
+    
+    </script>
+    <br>
+    <h3>segundo ejemplo de switch en Javascript</h3>
+    <br>
+<p id="ejemplo1"></p>
+
+<script>
+var dia;
+switch (new Date().getDay()) {
+    case 0:
+        dia = "Domingo";
+        break;
+    case 1:
+        dia = "Lunes";
+        break;
+    case 2:
+        dia = "Martes";
+        break;
+    case 3:
+        dia = "Miercoles";
+        break;
+    case 4:
+        dia = "Jueves";
+        break;
+    case 5:
+        dia = "Viernes";
+        break;
+    case  6:
+        dia = "Sabado";
+}
+document.getElementById("ejemplo1").innerHTML = "Hoy Parceros es " + dia;
+    
+    </script>
+
+    <br>
+    <h3>tercer ejemplo de switch en javascript</h3>
+    <br>
+    <p id="ejemplo2"></p>
+
+<script>
+var x = "0";
+
+switch (x) {
+    case 0:
+        text = "apagado";
+        break;
+    case 1:
+        text = "encendido";
+        break;
+    default:
+        text = "No pelao(@) valor no correcto";
+}
+document.getElementById("ejemplo2").innerHTML = text;
+</script>
+<br>
+
+    
+</body>
+</html>

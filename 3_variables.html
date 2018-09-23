@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Variables</title>
+</head>
+<body>
+    <h1>Ejemplo de variables en Javascript</h1>
+    <br>
+    <script>
+        //Asi declaramos un numero int(Entero)
+        var numero = 10;
+        document.write(numero);
+        /*Como ya estamos dentro de un elemento de JS para llamar elementos 
+        de HTML debemos aplicarlos desde un document.write o de un innerHTML*/
+        document.write("<br>");
+        //Asi declaramos un numero String (caracteres)
+        var nombre = "Luis"
+        document.write(nombre);
+        document.write("<hr>");
+        //Concatenacion
+        var otroNombre = "David " + "Mejia";
+        document.write(otroNombre);
+    </script>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <p>Esto es un ejemplo de variables tomando los valores x,y,z</p>
+
+<p id="ejemplo"></p>
+
+<script>
+var x = 5;
+var y = 6;
+var z = x + y;
+document.getElementById("ejemplo").innerHTML =
+"El valor de z es: " + z;
+</script>
+
+<hr>
+<script>
+    //Ejemplos de variables booleanas
+    var booleana = 4<5;
+    document.write(booleana);
+</script>
+<hr>
+
+
+</body>
+</html>

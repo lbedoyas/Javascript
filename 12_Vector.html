@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo de Array</title>
+</head>
+<body>
+
+    <h1>Ejemplo de vectores</h1>
+        <p id="carros"></p>
+
+        <script>
+        var cars = ["KIA", "Volvo", "BMW","Mazda", "Renult"];
+        document.getElementById("carros").innerHTML = cars;
+        document.write("<br>");
+        document.writeln(cars.length);
+        var agregar = cars.push("Uber");
+        document.writeln(agregar);
+        document.write("<br>");
+        document.writeln(cars);
+        </script>
+        <br>
+        <h3>ejemplo de arrayas con metodo join</h3>
+        <br>
+        <p id="join"></p>
+
+<script>
+var fruits = ["Bananos", "Mandarinas", "Manzanas", "Mangos"];
+document.getElementById("join").innerHTML = fruits.join(" * ");
+</script>
+    <br>
+    <h3>
+        Otro ejemplo con arreglos removiendo el primer elemendo
+    </h3>
+    <p id="a1"></p>
+    <p id="a2"></p>
+
+<script>
+var frutas = ["Bananos", "Mandarinas", "Manzanas", "Mangos"];
+document.getElementById("a1").innerHTML = frutas;
+frutas.shift();
+document.getElementById("a2").innerHTML = frutas;
+</script>
+<br>
+<h3>Ejemplo organizando vectores</h3>
+<br>
+<button onclick="myFunction()">Organizarlo en orden alfabetico </button>
+
+<p id="demo"></p>
+
+<script>
+var Lenguajes = ["React", "C#", "Swift", "Node Js", "Java", "Ruby", "Laravel","Python","Kotlin","Angular"];
+document.getElementById("demo").innerHTML = Lenguajes;
+
+function myFunction() {
+    Lenguajes.sort();
+    document.getElementById("demo").innerHTML = Lenguajes;
+}
+</script>
+
+
+</body>
+</html>
